@@ -157,6 +157,7 @@
       </concept>
     </language>
     <language id="b802a056-92a2-4fbc-902e-f8e5004c331f" name="org.inca.core">
+      <concept id="8452503225503193434" name="org.inca.core.structure.StrictErrorCheckingOption" flags="ng" index="fIOIW" />
       <concept id="996292992025672789" name="org.inca.core.structure.ConceptReferenceType" flags="ng" index="2kdjtB">
         <reference id="7241148409041409499" name="concept" index="2UGuZ7" />
       </concept>
@@ -207,6 +208,13 @@
       <concept id="1925259677761400360" name="org.inca.core.structure.IPathElement" flags="ng" index="3zVwHh">
         <reference id="1925259677761400369" name="interfacePart" index="3zVwH8" />
         <child id="1925259677761400367" name="next" index="3zVwHm" />
+      </concept>
+      <concept id="4799072788058999349" name="org.inca.core.structure.ProductionMode" flags="ng" index="1H6r5N" />
+      <concept id="4799072788058998474" name="org.inca.core.structure.DeveloperModeOption" flags="ng" index="1H6rQc">
+        <child id="4799072788058999195" name="mode" index="1H6rbt" />
+      </concept>
+      <concept id="4799072788058981840" name="org.inca.core.structure.IncACompilerOptions" flags="ng" index="1HTBUm">
+        <child id="4799072788058988391" name="options" index="1HTAgx" />
       </concept>
     </language>
     <language id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers">
@@ -1863,6 +1871,22 @@
         </node>
       </node>
     </node>
+    <node concept="1XdyHe" id="43u7Nb3WZJg" role="1dubk0" />
+    <node concept="3zyOaA" id="43u7Nb3WZzS" role="1dubk0">
+      <property role="TrG5h" value="getInde2x" />
+      <node concept="1VLyuc" id="43u7Nb3WZzT" role="1dv5OJ">
+        <property role="TrG5h" value="s" />
+        <node concept="2kdjtB" id="43u7Nb3WZzU" role="1dukDx">
+          <ref role="2UGuZ7" to="tpee:fzclF8l" resolve="Statement" />
+        </node>
+      </node>
+      <node concept="3zV_Rz" id="43u7Nb3WZzV" role="3zVECR" />
+      <node concept="3TL$xT" id="43u7Nb3WZ$0" role="3TLBbI">
+        <node concept="2PmbLq" id="43u7Nb3WZ$1" role="1dukDx">
+          <ref role="2PmbDx" to="tpck:fKAQMTA" resolve="integer" />
+        </node>
+      </node>
+    </node>
     <node concept="1XdyHe" id="5mId_SEXgdw" role="1dubk0" />
     <node concept="2Qv1iZ" id="1xD0u$hueDn" role="1dubk0">
       <property role="EcuMT" value="1758939229997034071" />
@@ -1947,6 +1971,12 @@
     </node>
     <node concept="1XdyHe" id="1xD0u$hudzn" role="1dubk0" />
     <node concept="1XdyHe" id="1xD0u$hudzM" role="1dubk0" />
+  </node>
+  <node concept="1HTBUm" id="43u7Nb3X4ES">
+    <node concept="1H6rQc" id="43u7Nb3X4Fo" role="1HTAgx">
+      <node concept="1H6r5N" id="43u7Nb3X4Gf" role="1H6rbt" />
+    </node>
+    <node concept="fIOIW" id="43u7Nb3X7rL" role="1HTAgx" />
   </node>
 </model>
 

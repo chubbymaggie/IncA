@@ -2,14 +2,15 @@
 <model ref="r:4bdfd273-579c-47c1-b009-fee35d8bcda0(org.inca.build.build)">
   <persistence version="9" />
   <languages>
-    <use id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps" version="5" />
-    <use id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build" version="0" />
-    <use id="3600cb0a-44dd-4a5b-9968-22924406419e" name="jetbrains.mps.build.mps.tests" version="0" />
+    <use id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps" version="-1" />
+    <use id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build" version="-1" />
+    <use id="3600cb0a-44dd-4a5b-9968-22924406419e" name="jetbrains.mps.build.mps.tests" version="-1" />
   </languages>
   <imports>
     <import index="ffeo" ref="r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)" />
     <import index="90a9" ref="r:fb24ac52-5985-4947-bba9-25be6fd32c1a(de.slisson.mps.all.build)" />
     <import index="al5i" ref="r:742f344d-4dc4-4862-992c-4bc94b094870(com.mbeddr.mpsutil.dev.build)" />
+    <import index="yu19" ref="642f71f8-327a-425b-84f9-44ad58786d27/f:project#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(jetbrains.mps.lang.project.modules/module.MPS.Core@project_stub)" />
   </imports>
   <registry>
     <language id="3600cb0a-44dd-4a5b-9968-22924406419e" name="jetbrains.mps.build.mps.tests">
@@ -228,6 +229,9 @@
       <node concept="m$_yC" id="11cllTXhE1r" role="m$_yJ">
         <ref role="m$_y1" to="ffeo:6EN03E8oSte" resolve="jetbrains.mps.ide.make" />
       </node>
+      <node concept="m$_yC" id="4_8TMZV0qi0" role="m$_yJ">
+        <ref role="m$_y1" to="ffeo:4k71ibbKLe8" resolve="jetbrains.mps.core" />
+      </node>
     </node>
     <node concept="2G$12M" id="11w71XmfwQH" role="3989C9">
       <property role="TrG5h" value="org.inca.plugin" />
@@ -380,22 +384,6 @@
                       <property role="2Ry0Am" value="capsule-0.4.0-20170621.132553-7.jar" />
                     </node>
                   </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3rtmxn" id="hRqrwL1nph" role="3bR31x">
-          <node concept="3LXTmp" id="hRqrwL1npi" role="3rtmxm">
-            <node concept="3qWCbU" id="hRqrwL1npj" role="3LXTna">
-              <property role="3qWCbO" value="icons/**, resources/**" />
-            </node>
-            <node concept="398BVA" id="hRqrwL1npk" role="3LXTmr">
-              <ref role="398BVh" node="4IWFKja4eXD" resolve="inca.code" />
-              <node concept="2Ry0Ak" id="hRqrwL1npl" role="iGT6I">
-                <property role="2Ry0Am" value="solutions" />
-                <node concept="2Ry0Ak" id="hRqrwL1npm" role="2Ry0An">
-                  <property role="2Ry0Am" value="org.inca.core.runtime" />
                 </node>
               </node>
             </node>
@@ -743,6 +731,22 @@
             </node>
           </node>
         </node>
+        <node concept="3rtmxn" id="hRqrwL1nph" role="3bR31x">
+          <node concept="3LXTmp" id="hRqrwL1npi" role="3rtmxm">
+            <node concept="3qWCbU" id="hRqrwL1npj" role="3LXTna">
+              <property role="3qWCbO" value="icons/**, resources/**" />
+            </node>
+            <node concept="398BVA" id="hRqrwL1npk" role="3LXTmr">
+              <ref role="398BVh" node="4IWFKja4eXD" resolve="inca.code" />
+              <node concept="2Ry0Ak" id="hRqrwL1npl" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="hRqrwL1npm" role="2Ry0An">
+                  <property role="2Ry0Am" value="org.inca.core.runtime" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="6_du9upXgV0" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -807,6 +811,18 @@
           <node concept="3bR9La" id="2Yoto85RRaq" role="1SiIV1">
             <property role="3bR36h" value="false" />
             <ref role="3bR37D" node="2Yoto85RQ7e" resolve="org.inca.core.runtime" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="7ldkIpV0gct" role="3bR37C">
+          <node concept="3bR9La" id="7ldkIpV0gcu" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:4IP11oWmB07" resolve="jetbrains.mps.ide.modelchecker.platform" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="7ldkIpV0gcv" role="3bR37C">
+          <node concept="3bR9La" id="7ldkIpV0gcw" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:1TaHNgiIbIQ" resolve="MPS.Core" />
           </node>
         </node>
         <node concept="3rtmxn" id="hRqrwL1no4" role="3bR31x">
@@ -1350,6 +1366,12 @@
               <ref role="3bR37D" node="6_du9upXgV0" resolve="org.inca.core.util" />
             </node>
           </node>
+          <node concept="1SiIV0" id="7ldkIpV0gdn" role="3bR37C">
+            <node concept="3bR9La" id="7ldkIpV0gdo" role="1SiIV1">
+              <property role="3bR36h" value="false" />
+              <ref role="3bR37D" to="ffeo:1TaHNgiIbIQ" resolve="MPS.Core" />
+            </node>
+          </node>
         </node>
         <node concept="1SiIV0" id="1UJP1A1c$T0" role="3bR37C">
           <node concept="1Busua" id="1UJP1A1c$T1" role="1SiIV1">
@@ -1365,6 +1387,12 @@
           <node concept="3bR9La" id="2Yoto85RRbC" role="1SiIV1">
             <property role="3bR36h" value="false" />
             <ref role="3bR37D" node="2Yoto85RQ7e" resolve="org.inca.core.runtime" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="12wiuiLehQ_" role="3bR37C">
+          <node concept="3bR9La" id="12wiuiLehQA" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6LgV" resolve="jetbrains.mps.make.runtime" />
           </node>
         </node>
         <node concept="1E0d5M" id="2Yoto85RRbD" role="1E1XAP">
@@ -1384,12 +1412,6 @@
                 </node>
               </node>
             </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="12wiuiLehQ_" role="3bR37C">
-          <node concept="3bR9La" id="12wiuiLehQA" role="1SiIV1">
-            <property role="3bR36h" value="false" />
-            <ref role="3bR37D" to="ffeo:7Kfy9QB6LgV" resolve="jetbrains.mps.make.runtime" />
           </node>
         </node>
       </node>
